@@ -39,7 +39,7 @@ class CdkWorkshopStack(Stack):
             self, 'refreshlambda32',
             runtime=_lambda.Runtime.PYTHON_3_9,
             code=_lambda.Code.from_asset('lambda'),
-            handler='code.lambda_handler',
+            handler='lambda.lambda_handler',
         )
         table.grant_read_data(my_lambda)
         table.grant_full_access(my_lambda)
