@@ -17,7 +17,7 @@ class Pipeline(Stack):
             
             synth=pipelines.ShellStep(
                 "Synth",
-                input=pipelines.CodePipelineSource.code_commit(repo, "master"),
+                input=pipelines.CodePipelineSource.code_commit(repo, "main"),
                 
 
             # Builds our source code outlined above into a could assembly artifact
